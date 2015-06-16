@@ -1,3 +1,6 @@
+# To run matcaffe on yell
+LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libstdc++.so.6 nice -n 10 matlab -nodisplay
+
 # Caffe
 
 Caffe is a deep learning framework made with expression, speed, and modularity in mind.
