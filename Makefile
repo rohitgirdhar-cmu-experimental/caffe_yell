@@ -318,6 +318,8 @@ ifeq ($(BLAS), mkl)
 else ifeq ($(BLAS), open)
 	# OpenBLAS
 	LIBRARIES += openblas
+	BLAS_INCLUDE += /IUS/homes4/rohytg/software/caffe_install/OpenBLAS_install/include
+	BLAS_LIB += /IUS/homes4/rohytg/software/caffe_install/OpenBLAS_install/lib
 else
 	# ATLAS
 	ifeq ($(LINUX), 1)
